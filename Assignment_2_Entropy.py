@@ -18,7 +18,7 @@ def encrypt_many(): # Used to hash the mass webcam data that was taken beforehan
         filepath = save_path / f"webcamData_{i:03d}.jpg"
         encrypt_key += hash_image(filepath)
 
-    return encrypt_key # Returns both the OTP-encrypted text as well as the key.
+    return encrypt_key # Returns the key.
 
 
 webcam_keys = encrypt_many()
@@ -45,4 +45,5 @@ plt.ylabel("Normalized Frequency")
 plt.title("Comparison of Byte Distributio")
 plt.legend()
 plt.show()
+
 

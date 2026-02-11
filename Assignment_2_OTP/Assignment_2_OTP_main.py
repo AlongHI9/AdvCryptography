@@ -90,6 +90,8 @@ def main():
     print("Your new encrypted phrase: " + str(secret_encrypted)) 
     print("And decrypting the encrypted phrase gives us the message: " + str(secret_decrypted))
 '''
-main()
+
+if __name__ == "__main__":
+    main()
 
 

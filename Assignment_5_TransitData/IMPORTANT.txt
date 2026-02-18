@@ -1,0 +1,3 @@
+I used OpenSSL to create my own key and cert. To generate your own key and cert, you can run this command in ps/cmd after installing openssl:
+
+openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
